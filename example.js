@@ -1,12 +1,12 @@
-const { Server, BodyParser } = require('node-microframework');
+const { Server, BodyParser } = require('simple-http-router');
 const app = new Server();
 
 app.use('/', BodyParser);
 
-app.post('/test', (req, res) => {
+app.post('/post', (req, res) => {
     let response = {
         test: Math.random(),
-        msg: "Test message",
+        msg: 'Test message',
         path: req.pathname,
         method: req.method,
         body: req.body
