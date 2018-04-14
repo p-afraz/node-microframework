@@ -1,3 +1,5 @@
+"use strict";
+
 const Response = require('./response');
 const Request = require('./request');
 const Responder = require('./responder');
