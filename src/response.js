@@ -6,6 +6,11 @@ class Response
         this._status = 200;
     }
 
+    get response()
+    {
+        return this._response;
+    }
+
     status(status)
     {
         this._status = status;
@@ -30,6 +35,11 @@ class Response
         }
 
         this._response.end(value);
+    }
+
+    json(value)
+    {
+        this.send(value);
     }
 }
 

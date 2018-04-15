@@ -11,6 +11,17 @@ class Request
         return this._request;
     }
 
+    get headers()
+    {
+        return this._request.headers;
+    }
+
+    // TODO: Parse and return real query string params
+    get query()
+    {
+        return {};
+    }
+
     get method()
     {
         return this._request.method;
@@ -58,7 +69,7 @@ class Request
 
     getHeader(name)
     {
-        return this.request.headers[name] || null;
+        return this.headers[name] || null;
     }
 
     callResponder(res)

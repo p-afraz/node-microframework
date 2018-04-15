@@ -1,6 +1,6 @@
 {
   "name": "simple-http-router",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple microframework for Node.js with HTTP routing and middleware support.",
   "main": "src/server.js",
   "dependencies": {},
